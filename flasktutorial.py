@@ -1,16 +1,9 @@
-from ast import While
 from flask import Flask, redirect, url_for
 
 app= Flask(__name__)
 a=False
 b=input("Uneiste lozinku:")
-while True:
-
-    if b=="kaciservis":
-        print("Tacno")
-        break
-    else:
-        print("netacno") 
+ 
 @app.route("/")
 def home():
     return "Hello!!<h1>Hello</h1>"
